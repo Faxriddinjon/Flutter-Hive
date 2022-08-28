@@ -35,7 +35,7 @@ class _ListTileState extends State<List_Tile> {
           ButtonTheme(
             minWidth: 40,
             buttonColor: Colors.white,
-            child: RaisedButton(
+            child: MaterialButton(
                 child: Icon(Icons.edit,size: 15,),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=> Edit(student: widget.student)));
@@ -44,7 +44,7 @@ class _ListTileState extends State<List_Tile> {
           ButtonTheme(
             minWidth: 40,
             buttonColor: Colors.white,
-            child: RaisedButton(
+            child: MaterialButton(
                 child: Icon(Icons.delete,size: 15,),
                 onPressed: (){
               widget.student.delete();
